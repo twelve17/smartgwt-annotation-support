@@ -2,7 +2,13 @@ This module is the result of a discussion here:
 
 http://forums.smartclient.com/showthread.php?t=11651&page=4
 
-It is an attempt at replacing SmartGWT's use of Javadoc to denote "override point" classes, which are classes in the SmartGWT framework which have been deemed as "approved" to be overriden by framework
-implementors.  The idea is to allow the Java compiler to issue warnings (or, optionally, errors), when a implementor overrides a framework class which is NOT approved as such.
+It is an attempt at replacing SmartGWT's use of Javadoc to denote 
+"override point" classes, which are classes in the SmartGWT framework which 
+have been deemed as "approved" to be overriden by framework implementors.  
 
-The idea is to have the SmartGWT framework incorporate this annotation processor, and use the @OverridePoint annotation in classes that are currently denoted as such via Javadoc.
+The processor allows the Java compiler to issue warnings (or, optionally, 
+errors), when a implementor overrides a framework class which is NOT approved as such.
+
+Implementation-wise, the ideal scenario would be to have the SmartGWT framework 
+incorporate this annotation processor, and use the @OverridePoint annotation in 
+classes that are currently denoted as such via Javadoc.
